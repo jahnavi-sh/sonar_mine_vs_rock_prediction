@@ -26,7 +26,7 @@ from sklearn.metrics import accuracy_score
 
 #loading dataset to pandas dataframe 
 #pandas dataframe is a 2D tabular structure with rows and columns.
-sonar_data = pd.read_csv(r"C:\Users\jahna\Downloads\sonar_data.csv", header=None)
+sonar_data = pd.read_csv(r"sonar_data.csv", header=None)
  
 #data preprocessing 
 #to understand the data, we first need to view the data
