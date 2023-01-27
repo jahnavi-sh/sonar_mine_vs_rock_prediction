@@ -20,6 +20,7 @@ This algorithm is about predicting SONAR rocks against mines with the help of ma
 It is especially useful in naval warfare where it is important for submarines to predict whether the object below it is a mine or a rock. The project is to train an algorithm to discriminate between sonar signals bounced off a mine and those bounced off a rock.  
 
 Machine learning - 
+
 Machine learning enables the processing of sonar signals and target detection. Machine Learning is a subset of Artificial Intelligence. This involves the development of computer systems that are able to learn by using algorithms and statistical measures to study data and draw results from it. Machine learning is basically an integration of computer systems, statistical mathematics and data.
 
 Machine Learning is further divided into three classes - Supervised learning, Unsupervised learning and Reinforcement Learning. 
@@ -35,50 +36,58 @@ Regression models describe the relationship between variables by fitting a line 
 
 Logistic regression (or sigmoid function or logit function) is a type of regression analysis and is commonly used algorithm for solving binary classification problems. It predicts a binary outcome based on a series of independent variables. The output is a predicted probability, binary value rather than numerical value. If the predicted value is a considerable negative value, it’s considered close to zero. If the predicted value if a significant positive value, it’s considered close to one. The dependent variable generally follows bernoulli distribution. Unlike linear regression model, that uses ordinary least square for parameter estimation, logistic regression uses maximum likelihood estimation, gradient descent and stochastic gradient descent. There can be infinite sets of regression coefficients. The maximum likelihood estimate is that set of regression coefficients for which the probability of getting data we have observed is maximum. To determine the values of parameters, log of likelihood function is taken, since it does not change the properties of the function. The log-likelihood is differentiated and using iterative techniques like newton method, values of parameters that maximise the log-likelihood are determined. A confusion matrix may be used to evaluate the accuracy of the logistic regression algorithm. 
 
+Python libraries used in the project - 
+
 NumPy  
+
 It is a python library used for working with arrays. It has functions for working in the domain of linear algebra, fourier transform, and matrices. It is the fundamental package for scientific computing with python. NumPy stands for numerical python. 
 
 NumPy is preferred because it is faster than traditional python lists. It has supporting functions that make working with ndarray very easy. Arrays are frequently used where speed and resources are very important. NumPy arrays are faster because it is stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently. This is locality of reference in computer science. 
 
 Pandas - 
+
 Pandas is made for working with relational or labelled data both easily and intuitively. It provides various data structures and operations for manipulating numerical data and time series. 
 
 It has a lot of advantages like - 
-Fast and efficient for manipulating and analyzing data
-Data from different file objects can be loaded 
-Easy handling of missing data in data preprocessing 
-Size mutability 
-Easy dataset merging and joining 
-Flexible reshaping and pivoting of datasets 
-Gives time-series functionality 
+1. Fast and efficient for manipulating and analyzing data
+2. Data from different file objects can be loaded 
+3. Easy handling of missing data in data preprocessing 
+4. Size mutability 
+5. Easy dataset merging and joining 
+6. Flexible reshaping and pivoting of datasets 
+7. Gives time-series functionality 
 
 Pandas is built on top of NumPy library. That means that a lot of structures of NumPy are used or replicated in Pandas. The data produced by pandas are often used as input for plotting functions of Matplotlib, statistical analysis in SciPy, and machine learning algorithms in Scikit-learn. 
 
 Scikit-Learn - 
+
 It provides efficient tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction. It has numerous machine learning, pre-processing, cross validation, and visualization algorithms. 
 
 Exploratory data analysis - 
+
 ‘describe()’ method returns description of data in DataFrame. It tells us the following information for each column - 
-Count - number of non-empty values
-Mean - the average (mean) value  
-Std - standard deviation
-Min - minimum value
-25% - the 25 percentile 
-50% - the 50 percentile 
-75% - the 75 percentile
-Max - maximum value
+- Count - number of non-empty values
+- Mean - the average (mean) value  
+- Std - standard deviation
+- Min - minimum value
+- 25% - the 25 percentile 
+- 50% - the 50 percentile 
+- 75% - the 75 percentile
+- Max - maximum value
 
 Train-test split - 
+
 The entire dataset is split into training dataset and testing dataset. Usually, 80-20 or 70-30 split is done. The train-test split is used to prevent the model from overfitting and to estimate the performance of prediction-based algorithms. We need to split the dataset to evaluate how well our machine learning model performs. The train set is used to fit the model, and statistics of training set are known. Test set is for predictions. 
 
 This is done by using scikit-learn library and train_test_split() function. 
+
 Parameters - 
-*arrays: inputs such as lists, arrays, data frames, or matrices
-test_size: this is a float value whose value ranges between 0.0 and 1.0. it represents the proportion of our test size. its default value is none.
-train_size: this is a float value whose value ranges between 0.0 and 1.0. it represents the proportion of our train size. its default value is none.
-random_state: this parameter is used to control the shuffling applied to the data before applying the split. it acts as a seed.
-shuffle: This parameter is used to shuffle the data before splitting. Its default value is true.
-stratify: This parameter is used to split the data in a stratified fashion.
+1. *arrays: inputs such as lists, arrays, data frames, or matrices
+2. test_size: this is a float value whose value ranges between 0.0 and 1.0. it represents the proportion of our test size. its default value is none.
+3. train_size: this is a float value whose value ranges between 0.0 and 1.0. it represents the proportion of our train size. its default value is none.
+4. random_state: this parameter is used to control the shuffling applied to the data before applying the split. it acts as a seed.
+5. shuffle: This parameter is used to shuffle the data before splitting. Its default value is true.
+6. stratify: This parameter is used to split the data in a stratified fashion.
 
 Model evaluation - 
 
@@ -92,4 +101,3 @@ Tp - true positive. This refers to the total number of observations that belong 
 Tn - true negatives. It is total number of observations that belong to the negative class and have been predicted correctly 
 Fp - false positives. It total number of observations that have been predicted to belong to positive class, but instead belong to the negative class. 
 Fn - false negatives. It is total number of observations that have been predicted to be a part of negative class but instead belong to the positive class. 
-
