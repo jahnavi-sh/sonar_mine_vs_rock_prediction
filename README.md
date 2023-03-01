@@ -19,6 +19,13 @@ This algorithm is about predicting SONAR rocks against mines with the help of ma
 
 It is especially useful in naval warfare where it is important for submarines to predict whether the object below it is a mine or a rock. The project is to train an algorithm to discriminate between sonar signals bounced off a mine and those bounced off a rock.  
 
+About the dataset - 
+
+There are 5 rows and 61 columns of data
+The 60th column gives us the rock and mine classification label
+R - the object is rock 
+M - the object is mine
+
 Machine learning - 
 
 Machine learning enables the processing of sonar signals and target detection. Machine Learning is a subset of Artificial Intelligence. This involves the development of computer systems that are able to learn by using algorithms and statistical measures to study data and draw results from it. Machine learning is basically an integration of computer systems, statistical mathematics and data.
