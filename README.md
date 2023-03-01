@@ -22,8 +22,11 @@ It is especially useful in naval warfare where it is important for submarines to
 About the dataset - 
 
 There are 5 rows and 61 columns of data
+
 The 60th column gives us the rock and mine classification label
+
 R - the object is rock 
+
 M - the object is mine
 
 Machine learning - 
