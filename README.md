@@ -85,6 +85,20 @@ Exploratory data analysis -
 - 75% - the 75 percentile
 - Max - maximum value
 
+Unbalanced classes - 
+
+In classification cases, when the data available on one or more classes are extremely low, then it is a unbalanced class. 
+
+This can be a problem because - 
+1. We don’t get optimized results for the class which is unbalanced in real time as the algorithm model does not get sufficient insight at the underlying class. 
+2. It creates a problem in making validation to test data because it is difficult to have representation across classes in case number of observations for few classes is extremely less. 
+
+Following are some of the ways of handling it - 
+1. Undersampling - Here, we randomly delete the class which has sufficient observations so that the comparative ration of two classes is significant in our data. This approach is simple but it can introduce a bias in the data because there is a high possibility that the data we are deleting may contain important information about the predictive class. 
+2. Oversampling - For the unbalanced class randomly increase the number of observations which are just copies of existing samples. This ideally gives a sufficient number of samples to work with. However, oversampling may lead to overfitting to the training data. 
+3. Synthetic sampling - synthetically manufacture observations of unbalanced classes which are similar to the existing using nearest neighbour classification. The problem comes when the number of observations are of extremely rare class. 
+
+
 Train-test split - 
 
 The entire dataset is split into training dataset and testing dataset. Usually, 80-20 or 70-30 split is done. The train-test split is used to prevent the model from overfitting and to estimate the performance of prediction-based algorithms. We need to split the dataset to evaluate how well our machine learning model performs. The train set is used to fit the model, and statistics of training set are known. Test set is for predictions. 
